@@ -11,11 +11,11 @@ SERVER=${SNOWFLAKE_ACCOUNT}.snowflakecomputing.com
 PORT=443
 SSL=on
 CLIENT_SESSION_KEEP_ALIVE=true
-Database=${DATABASE}
-Schema=${SCHEMA}
-Warehouse=${WAREHOUSE}
-Role={ROLE}
+Database=${SNOWFLAKE_DATABASE}
+Schema=${SNOWFLAKE_SCHEMA}
+Warehouse=${SNOWFLAKE_WAREHOUSE}
+Role=${SNOWFLAKE_ROLE}
 Query_Timeout=270
-uid=${UID}
-pwd=${PWD}
+uid=${SNOWFLAKE_UID}
+pwd=${SNOWFLAKE_PWD}
 " > ${ODBCSYSINI}/odbc.ini
